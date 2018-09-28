@@ -6,14 +6,18 @@ import MainContent from './components/MainContent'
 import Footer from './components/Footer'
 
 class App extends Component {
-  render() {
+  state = {
+    cat: '',
+    dog: '',
+  }
+  render () {
+    const { cat } = this.state
     return (
       <div>
-      <Header />
-      <MainContent />
-      <Footer />
-     
-         
+        <Header />
+        <MainContent />
+        <Footer />
+        <p>{cat}</p>
       </div>
     );
   }

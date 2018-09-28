@@ -1,6 +1,9 @@
 {
-    "extends": "rallycoding",
+    "parser": "babel-eslint",
+    "extends": ["standard", "standard-react"],
     "rules": {
-        "semi": 0
+       "semi": 0,
+       "comma-dangle": ["error", "always-multiline"],
+       "prefer-destructuring": ["error", {"object": true, "array": false}]
     }
 }
